@@ -5,14 +5,14 @@ echo  "Enter first value "
 read value1
 echo "Enter second Value"
 read value2
-$(( value1+value2 ))
+value3=$(( value1+value2 ))
 
-if [ $(( sumvalue % 2 )) == 0 ]
+if [ $(( value3 % 2 )) == 0 ]
 
 then 
-	echo "The number is even god!"
+	echo value3 + "The number is even god!"
 else
-	echo "The number is odd duh!"
+	echo value3 +  "The number is odd duh!"
 fi
 
 
