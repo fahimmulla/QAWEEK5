@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# condition basic
+
+echo  "Enter first value "
+read value1
+echo "Enter second value"
+read value2
+
+
+
+
+
+if [ $
+then 
+	echo "The number is even god!"
+else
+	echo "The number is odd duh!"
+fi
+
+
+
+
+
