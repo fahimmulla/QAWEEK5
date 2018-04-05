@@ -1,10 +1,15 @@
+
 #!/bin/bash
 
-echo "enter a value"
-read value
-counter=1
-
-for i in 30
-do
-    if [ (( i == 3)) || ((i ==5)) || ((i%3 =0)) || ((i%5==0))]
+for ((i=1;i<=30;i++)); do
+	if ! ((i%15)); then
+	  echo FizzBuzz
+	elif ! ((i%3)); then
+	 echo Fizz
+	elif ! ((i%5)); then
+	echo Buzz
+	else
+	  echo $i
+	fi;
+done
 
